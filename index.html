@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Resume Screening Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>AI-Based Resume Screening Web App</h1>
+            <p>Get instant feedback on your resume using advanced AI analysis</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="upload-section">
+            <h2>Upload Your Resume</h2>
+            <div class="drag-drop-zone" id="drop-zone">
+                <p>Drag & drop your resume here or</p>
+                <button type="button" onclick="document.getElementById('resume-upload').click()">
+                    Browse Files
+                </button>
+                <input type="file" id="resume-upload" accept=".pdf,.docx,.txt">
+            </div>
+            <div class="file-details" id="file-details"></div>
+        </section>
+
+        <section class="analysis-results" id="results">
+            <!-- AI Analysis Results will be inserted here -->
+        </section>
+    </main>
+
+    <div class="loading-overlay" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script type="module" src="script.js">
+    </script>
+</body>
+</html>
